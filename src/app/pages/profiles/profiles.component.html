@@ -1,0 +1,7 @@
+<app-header></app-header>
+<section class="container--alt container--centered" *ngIf="loading; else usersTable">
+  <app-loading></app-loading>
+</section>
+<ng-template #usersTable>
+  <app-users-table></app-users-table>
+</ng-template>

@@ -1,0 +1,60 @@
+html {
+    font-family:  'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 62.5%;
+    line-height: 1.4;
+    color: $text;
+    box-sizing: border-box;
+    background-color: $background;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    color: $title;
+}
+h1 {
+    font-size: 3.6rem;
+}
+h2 {
+    font-size: 2.4rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline-block;
+}
+p {
+    margin-bottom: 1.6rem;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+a {
+    color: $header;
+    text-decoration: none;
+}
+table {
+    width: 100%;
+}
+.container {
+    padding: 2rem;
+    @include respond-to($tablet) {
+        padding: 4rem;
+    }
+    &--alt {
+        padding: 8rem 2rem;
+    }
+    &--centered {
+        margin: 0 auto;
+        text-align: center;
+    }
+}
